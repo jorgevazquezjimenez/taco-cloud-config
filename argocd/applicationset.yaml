@@ -20,3 +20,7 @@ spec:
       destination:
         server: '{{url}}'
         namespace: taco-cloud
+      syncPolicy:
+        automated:
+            prune: true
+            selfHeal: true
