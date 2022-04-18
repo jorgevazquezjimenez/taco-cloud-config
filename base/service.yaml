@@ -4,8 +4,8 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "0"
   labels:
-    app: taco-cloud
-  name: taco-cloud
+    app: dev-taco-cloud
+  name: dev-taco-cloud
 spec:
   ports:
   - name: http

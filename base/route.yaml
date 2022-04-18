@@ -5,13 +5,13 @@ metadata:
     openshift.io/host.generated: "true"
     argocd.argoproj.io/sync-wave: "0"
   labels:
-    app: taco-cloud
-  name: taco-cloud
+    app: dev-taco-cloud
+  name: dev-taco-cloud
 spec:
   port:
     targetPort: http
   to:
     kind: Service
-    name: taco-cloud
+    name: dev-taco-cloud
     weight: 100
   wildcardPolicy: None
