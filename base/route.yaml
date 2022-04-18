@@ -14,7 +14,4 @@ spec:
     kind: Service
     name: dev-taco-cloud
     weight: 100
-  tls:
-    termination: passthrough
-    insecureEdgeTerminationPolicy: None
   wildcardPolicy: None
