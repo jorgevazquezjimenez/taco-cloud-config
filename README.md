@@ -1,2 +1,2 @@
-# taco-cloud-config
+# Taco Cloud Config
 Taco cloud project configuration

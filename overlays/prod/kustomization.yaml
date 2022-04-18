@@ -1,0 +1,7 @@
+bases:
+  - ../manifests
+
+replicas:
+  - count: 3
+    name: taco-cloud
+nameSuffix: -prod
