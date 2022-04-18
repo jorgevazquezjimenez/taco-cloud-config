@@ -11,5 +11,4 @@ spec:
   - name: http
     port: 8080
   selector:
-    app: dev-taco-cloud
-    deploymentconfig: dev-taco-cloud
+    app: taco-cloud
