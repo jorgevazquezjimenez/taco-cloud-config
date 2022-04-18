@@ -3,6 +3,7 @@ kind: Route
 metadata:
   annotations:
     openshift.io/host.generated: "true"
+    argocd.argoproj.io/sync-wave: "0"
   labels:
     app: taco-cloud
   name: taco-cloud

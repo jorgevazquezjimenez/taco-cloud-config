@@ -3,13 +3,9 @@ kind: Deployment
 metadata:
   annotations:
     alpha.image.policy.openshift.io/resolve-names: '*'
-    openshift.io/generated-by: OpenShiftWebConsole
+    argocd.argoproj.io/sync-wave: "0"
   labels:
     app: taco-cloud
-    app.kubernetes.io/component: taco-cloud
-    app.kubernetes.io/instance: taco-cloud
-    app.kubernetes.io/part-of: taco-cloud-app
-    app.openshift.io/runtime-namespace: gitops-demo
   name: taco-cloud
 spec:
   progressDeadlineSeconds: 600
