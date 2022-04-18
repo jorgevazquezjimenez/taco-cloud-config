@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
-  name: taco-cloud-operator
+  name: taco-cloud
 spec:
   generators:
   - list:
