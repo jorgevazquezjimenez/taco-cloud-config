@@ -12,11 +12,13 @@ spec:
     metadata:
       name: '{{cluster}}-taco-cloud'
       annotations:
-        argocd-image-updater.argoproj.io/image-list: georgevazj/taco-cloud
+        argocd-image-updater.argoproj.io/image-list: app-image=docker.io/georgevazj/taco-cloud
         argocd-image-updater.argoproj.io/yourtool.update-strategy: latest
         # argocd-image-updater.argoproj.io/yourtool.allow-tags: regexp:^v1.0.0-[0-9a-zA-Z]+$
-        # argocd-image-updater.argoproj.io/yourtool.allow-tags: regexp:[0-9a-zA-Z]+$
+        argocd-image-updater.argoproj.io/myalias.force-update: "true"
+        argocd-image-updater.argoproj.io/yourtool.allow-tags: any
         argocd-image-updater.argoproj.io/write-back-method: declarative
+        argocd-image-updater.argoproj.io/argocd.kustomize.image-name: app-image
     spec:
       project: default
       source:
