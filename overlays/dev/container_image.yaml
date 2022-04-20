@@ -1,7 +1,12 @@
-apiVersion: v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: dev-taco-cloud
+  annotations:
+    alpha.image.policy.openshift.io/resolve-names: '*'
+    argocd.argoproj.io/sync-wave: "0"
+  labels:
+    app: dev-taco-cloud
+  name: taco-cloud
 
 template:
   spec:

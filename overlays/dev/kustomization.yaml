@@ -13,3 +13,9 @@ bases:
 
 patches:
 - container_image.yaml
+- replica_count.yaml
+
+images:
+- digest: sha256:fe41c3076659057b1eb73f29ccb5f97e7ba09b31066759945a3d389155eeb92b
+  name: app-image
+  newName: docker.io/georgevazj/taco-cloud
