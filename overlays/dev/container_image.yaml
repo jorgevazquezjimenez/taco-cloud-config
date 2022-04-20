@@ -8,9 +8,10 @@ metadata:
     app: dev-taco-cloud
   name: taco-cloud
 
-template:
-  spec:
-    containers:
-      - image: app-image
-        imagePullPolicy: IfNotPresent
-        name: taco-cloud
+spec:
+  template:
+    spec:
+      containers:
+        - image: app-image
+          imagePullPolicy: IfNotPresent
+          name: taco-cloud
