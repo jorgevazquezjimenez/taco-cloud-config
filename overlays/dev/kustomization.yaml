@@ -10,3 +10,6 @@ namePrefix: dev-
 
 bases:
   - ../../base
+
+patches:
+- container_image.yaml
