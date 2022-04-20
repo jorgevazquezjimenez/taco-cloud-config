@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Deployment
 metadata:
-  name: taco-cloud
+  name: dev-taco-cloud
 
 spec:
   replicas: 1
