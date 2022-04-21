@@ -1,0 +1,16 @@
+commonLabels:
+  variant: development
+
+commonAnnotations:
+  description: Taco Cloud project
+  source: kustomize
+  team: sanacloud
+
+namePrefix: dev-
+
+bases:
+  - ../../base
+
+patchesStrategicMerge:
+- replica_count.yaml
+- delete_route.yaml

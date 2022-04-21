@@ -1,0 +1,18 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  annotations:
+    openshift.io/host.generated: "true"
+    argocd.argoproj.io/sync-wave: "0"
+  labels:
+    app: prod-taco-cloud
+  name: taco-cloud
+  namespace: taco-cloud
+spec:
+  port:
+    targetPort: http
+  to:
+    kind: Service
+    name: prod-taco-cloud
+    weight: 100
+  wildcardPolicy: None
