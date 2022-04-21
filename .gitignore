@@ -351,3 +351,6 @@ MigrationBackup/
 
 # Visual Studio Code
 .vscode/
+
+# Github PAT
+.github_pat
