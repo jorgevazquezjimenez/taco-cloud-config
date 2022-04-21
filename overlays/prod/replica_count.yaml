@@ -5,8 +5,8 @@ metadata:
     alpha.image.policy.openshift.io/resolve-names: '*'
     argocd.argoproj.io/sync-wave: "0"
   labels:
-    app: dev-taco-cloud
+    app: prod-taco-cloud
   name: taco-cloud
 
 spec:
-  replicas: 1
+  replicas: 3
