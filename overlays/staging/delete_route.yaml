@@ -8,11 +8,12 @@ metadata:
   labels:
     app: taco-cloud
   name: taco-cloud
+  namespace: taco-cloud
 spec:
   port:
     targetPort: http
   to:
     kind: Service
-    name: prod-taco-cloud
+    name: staging-taco-cloud
     weight: 100
   wildcardPolicy: None
