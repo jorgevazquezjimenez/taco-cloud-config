@@ -3,9 +3,9 @@ kind: Kustomization
 
 resources:
 - deployment.yaml
-- route.yaml
 - service.yaml
 - namespace.yaml
+- route.yaml
 
 labels:
 - pairs:
