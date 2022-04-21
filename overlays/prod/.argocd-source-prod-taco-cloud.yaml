@@ -1,3 +1,3 @@
 kustomize:
   images:
-  - app-image=docker.io/georgevazj/taco-cloud:a864abe168955d89a67e1c59620942beb9995194
+  - app-image=docker.io/georgevazj/taco-cloud:6a2ee64d153eb13c4259fdd31d8a26d0fb85234f
