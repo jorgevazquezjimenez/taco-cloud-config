@@ -9,4 +9,4 @@ metadata:
   name: taco-cloud
 
 spec:
-  replicas: 3
+  replicas: 6
