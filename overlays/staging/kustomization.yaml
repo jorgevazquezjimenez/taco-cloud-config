@@ -1,7 +1,16 @@
-bases:
-  - ../manifests
+commonLabels:
+  variant: development
 
-replicas:
-  - count: 3
-    name: taco-cloud
-nameSuffix: -staging
+commonAnnotations:
+  description: Taco Cloud project
+  source: kustomize
+  team: sanacloud
+
+namePrefix: staging-
+
+bases:
+  - ../../base
+
+patchesStrategicMerge:
+- replica_count.yaml
+- delete_route.yaml
