@@ -11,5 +11,6 @@ namePrefix: prod-
 bases:
   - ../../base
 
-patches:
+patchesStrategicMerge:
 - replica_count.yaml
+- delete_route.yaml
