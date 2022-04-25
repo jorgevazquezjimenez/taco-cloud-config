@@ -8,17 +8,18 @@ metadata:
     app: prod-taco-cloud
   name: taco-cloud
 
-spec:
-  replicas: 3
-  affinity:
-    podAntiAffinity: 
-      preferredDuringSchedulingIgnoredDuringExecution: 
-      - weight: 100  
-        podAffinityTerm:
-          labelSelector:
-            matchExpressions:
-            - key: team 
-              operator: In 
-              values:
-              - sanacloud
-          topologyKey: kubernetes.io/hostname
+template:
+  spec:
+    replicas: 3
+    affinity:
+      podAntiAffinity: 
+        preferredDuringSchedulingIgnoredDuringExecution: 
+        - weight: 100  
+          podAffinityTerm:
+            labelSelector:
+              matchExpressions:
+              - key: team 
+                operator: In 
+                values:
+                - sanacloud
+            topologyKey: kubernetes.io/hostname
