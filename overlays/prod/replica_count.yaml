@@ -9,9 +9,9 @@ metadata:
   name: taco-cloud
 
 spec:
+  replicas: 3
   template:
     spec:
-      replicas: 3
       affinity:
         podAntiAffinity: 
           preferredDuringSchedulingIgnoredDuringExecution: 
