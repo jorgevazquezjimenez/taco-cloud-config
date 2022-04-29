@@ -6,7 +6,6 @@ resources:
 - service.yaml
 - namespace.yaml
 - route.yaml
-- secret.yaml
 - service_account.yaml
 
 labels:
