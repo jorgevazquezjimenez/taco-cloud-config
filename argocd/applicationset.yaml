@@ -17,12 +17,6 @@ spec:
       name: '{{cluster}}-taco-cloud'
       finalizers:
         - resources-finalizer.argocd.argoproj.io
-      # annotations:
-      #   argocd-image-updater.argoproj.io/image-list: front=docker.io/georgevazj/taco-cloud
-      #   argocd-image-updater.argoproj.io/front.update-strategy: latest
-      #   argocd-image-updater.argoproj.io/front.allow-tags: any
-      #   argocd-image-updater.argoproj.io/front.kustomize.image-name: app-image
-      #   argocd-image-updater.argoproj.io/write-back-method: git
     spec:
       project: default
       source:
