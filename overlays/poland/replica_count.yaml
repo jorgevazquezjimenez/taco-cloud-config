@@ -5,13 +5,8 @@ metadata:
     alpha.image.policy.openshift.io/resolve-names: '*'
     argocd.argoproj.io/sync-wave: "0"
   labels:
-    app: prod-taco-cloud
+    app: poland-taco-cloud
   name: taco-cloud
 
 spec:
-  template:
-    spec:
-      containers:
-        - image: app-image
-          imagePullPolicy: IfNotPresent
-          name: taco-cloud
+  replicas: 3

@@ -1,4 +1,3 @@
-$patch: delete
 apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
@@ -6,7 +5,7 @@ metadata:
     openshift.io/host.generated: "true"
     argocd.argoproj.io/sync-wave: "0"
   labels:
-    app: taco-cloud
+    app: spain-taco-cloud
   name: taco-cloud
   namespace: taco-cloud
 spec:
@@ -14,6 +13,6 @@ spec:
     targetPort: http
   to:
     kind: Service
-    name: staging-taco-cloud
+    name: spain-taco-cloud
     weight: 100
   wildcardPolicy: None
