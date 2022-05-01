@@ -27,6 +27,8 @@ spec:
         server: '{{url}}'
         namespace: 'taco-cloud'
       syncPolicy:
+        syncOptions:
+          - CreateNamespace=true
         automated:
             prune: true
             selfHeal: true
