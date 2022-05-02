@@ -25,7 +25,7 @@ spec:
         path: overlays/{{cluster}}
       destination:
         server: '{{url}}'
-        # namespace: 'taco-cloud'
+        namespace: 'taco-cloud'
       syncPolicy:
         syncOptions:
           - CreateNamespace=true
