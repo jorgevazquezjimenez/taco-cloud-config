@@ -6,7 +6,7 @@ commonAnnotations:
   source: kustomize
   team: sanacloud
 
-namePrefix: spain-
+# namePrefix: spain-
 
 bases:
   - ../../base

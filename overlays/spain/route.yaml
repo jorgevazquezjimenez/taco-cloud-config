@@ -5,7 +5,7 @@ metadata:
     openshift.io/host.generated: "true"
     argocd.argoproj.io/sync-wave: "0"
   labels:
-    app: spain-taco-cloud
+    app: taco-cloud
   name: taco-cloud
   namespace: taco-cloud
 spec:
@@ -13,6 +13,6 @@ spec:
     targetPort: http
   to:
     kind: Service
-    name: spain-taco-cloud
+    name: taco-cloud
     weight: 100
   wildcardPolicy: None
