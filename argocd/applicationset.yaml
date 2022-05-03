@@ -6,10 +6,10 @@ spec:
   generators:
   - list:
       elements:
-      # - cluster: uk
-      #   url: https://sans1weuakssanaks001-dns-ae267f23.hcp.westeurope.azmk8s.io:443
-      # - cluster: poland
-      #   url: https://sans1weuakssanaks002-dns-de1fff24.hcp.westeurope.azmk8s.io:443
+      - cluster: uk
+        url: https://sans1weuakssanaks001-dns-ae267f23.hcp.westeurope.azmk8s.io:443
+      - cluster: poland
+        url: https://sans1weuakssanaks002-dns-de1fff24.hcp.westeurope.azmk8s.io:443
       - cluster: spain
         url: https://kubernetes.default.svc
   template:
