@@ -22,6 +22,6 @@ commonAnnotations:
   team: sanacloud
 
 images:
-- digest: sha256:20e440e90aeac92e8606f6ceb711d68c9868e493fdf5c89da0c21917f8feef5c
+- digest: sha256:7ca0cf7c255e5a2e618e54ec4e8caa60c052b85f06724a10102f48cca410898b
   name: app-image
   newName: docker.io/georgevazj/taco-cloud
