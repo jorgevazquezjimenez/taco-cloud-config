@@ -23,17 +23,6 @@ spec:
         repoURL: https://github.com/georgevazj/taco-cloud-config
         targetRevision: main
         path: overlays/{{cluster}}
-        # plugin:
-        #   name: argocd-vault-plugin
-        #   env:
-        #     - name: AVP_K8S_ROLE
-        #       value: vplugin
-        #     - name: AVP_TYPE
-        #       value: vault
-        #     - name: VAULT_ADDR
-        #       value: 'http://172.30.137.242:8200'
-        #     - name: AVP_AUTH_TYPE
-        #       value: k8s
       destination:
         server: '{{url}}'
         namespace: taco-cloud
