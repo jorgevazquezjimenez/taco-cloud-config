@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: RoleBinding
+metadata:
+  name: taco-cloud-app
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: taco-cloud-app
+subjects:
+  - kind: ServiceAccount
+    name: taco-cloud
+    namespace: taco-cloud

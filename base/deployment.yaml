@@ -27,6 +27,7 @@ spec:
         app: taco-cloud
         deploymentconfig: taco-cloud
     spec:
+      serviceAccountName: taco-cloud
       containers:
       - image: app-image
         imagePullPolicy: IfNotPresent
