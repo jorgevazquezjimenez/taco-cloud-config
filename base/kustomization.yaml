@@ -10,7 +10,7 @@ resources:
 - sa.yaml
 - role.yaml
 - binding.yaml
-- nodeport.yaml
+# - nodeport.yaml
 
 labels:
 - pairs:
