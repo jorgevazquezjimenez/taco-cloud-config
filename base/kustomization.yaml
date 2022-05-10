@@ -9,6 +9,7 @@ resources:
 - secret.yaml
 - sa.yaml
 - role.yaml
+- binding.yaml
 
 labels:
 - pairs:
